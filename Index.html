@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physik Stufe 11 - Notizen & Lösungen</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-green: #34d399;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-blue);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 0.5rem;
+            color: var(--accent-green);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.25rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+            border-color: var(--accent-blue);
+        }
+
+        .card-info h3 {
+            margin: 0 0 0.3rem 0;
+            font-size: 1rem;
+        }
+
+        .card-info span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .badge {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Physik Stufe 11</h1>
+        <p>Unterrichtsnotizen & Lösungen für das Abitur</p>
+    </header>
+
+    <main>
+        <div class="section-title">Lösungen zu Aufgaben</div>
+        <div class="grid">
+            <a href="loesungen_mechanik.docx" download class="card">
+                <div class="card-info">
+                    <h3>Klassische Mechanik</h3>
+                    <span>Aufgaben 1 - 15</span>
+                </div>
+                <div class="badge">.DOCX ↓</div>
+            </a>
+
+            <a href="loesungen_kinematik.docx" download class="card">
+                <div class="card-info">
+                    <h3>Kinematik & Bewegung</h3>
+                    <span>Übungsblatt 2</span>
+                </div>
+                <div class="badge">.DOCX ↓</div>
+            </a>
+        </div>
+
+        <div class="section-title">Unterrichtsnotizen</div>
+        <div class="grid">
+            <a href="notizen_newton_gesetze.docx" download class="card">
+                <div class="card-info">
+                    <h3>Newton'sche Gesetze</h3>
+                    <span>Zusammenfassung Thema 1</span>
+                </div>
+                <div class="badge">.DOCX ↓</div>
+            </a>
+
+            <a href="notizen_energieerhaltung.docx" download class="card">
+                <div class="card-info">
+                    <h3>Energieerhaltungssatz</h3>
+                    <span>Mitschrift vom 12.09.</span>
+                </div>
+                <div class="badge">.DOCX ↓</div>
+            </a>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
